@@ -1,0 +1,13 @@
+.page-footer {
+  font-family: $font-deafult;
+  color: $basic-black;
+  background-color: $basic-white;
+  padding-bottom: 100px
+}
+
+.page-footer__wrapper {
+  @include wrapper;
+
+  display: flex;
+  flex-direction: column;
+}

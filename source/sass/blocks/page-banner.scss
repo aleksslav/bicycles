@@ -1,0 +1,11 @@
+.page-banner {
+  padding: 245px 126px 9px 127px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media (max-width: $tablet-width-only) {
+    padding: 0;
+    flex-direction: column;
+  }
+}

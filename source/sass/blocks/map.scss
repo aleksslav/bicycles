@@ -1,0 +1,53 @@
+.map {
+  padding: 50px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.map__title {
+  @include reset-list;
+  font-family: $font-deafult;
+  font-size: 30px;
+  letter-spacing: -0.005em;
+  line-height: 30px;
+  font-weight: 600;
+  font-style: normal;
+  color: $basic-mine-shaft;
+
+  @media (max-width: $tablet-width-only) {
+    font-size: 24px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    font-size: 18px;
+  }
+}
+
+.map__text {
+  @include reset-list;
+  font-family: $font-deafult;
+  letter-spacing: -0.005em;
+  line-height: 32px;
+  font-weight: 300;
+  font-style: normal;
+  color: $special-black-07;
+}
+
+.map__picture {
+  width: 957px;
+  height: 530px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+
+  @media (max-width: $tablet-width-only) {
+    width: auto;
+    height: 545px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: auto;
+    height: 250px;
+  }
+}

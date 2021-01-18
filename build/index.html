@@ -1,13 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <h1>Добро пожаловать в Лигу А.</h1>
-</body>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Moon</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/OpenSans-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/OpenSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  </head>
+  <body class="page-body">
+    <header class="page-header page-header--no-js">
+      <div class="page-header__wrapper">
+        <nav class="header-nav header-nav--no-js header-nav--closed">
+          <ul class="header-nav__list site-list">
+            <li><a class="header-nav__item site-list__item site-list__item--active" href="#about-us">О нас</a></li>
+            <li><a class="header-nav__item site-list__item" href="#types-of-bicycles">Виды велосипедов</a></li>
+            <li><a class="header-nav__item site-list__item" href="#video ">Видео про велосипеды</a></li>
+            <li><a class="header-nav__item site-list__item" href="#contacts">Контакты</a></li>
+          </ul>
+          <button class="header-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть/Закрыть меню</span>
+          </button>
+        </nav>
+        <div class="page-banner">
+          <section class="banner">
+            <a class="banner-logo" aria-label="Логотип компании «Moon»">
+              <svg class="banner-logo__img" width="68" height="21" viewBox="0 0 68 21">
+                <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+              </svg>
+            </a>
+            <h2 class="banner__title">Мы&nbsp;продаем велосипеды</h2>
+            <p class="banner__text">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+          </section>
+          <section class="callback">
+            <h2 class="visually-hidden">Форма для отправки запроса по подбору велосипеда</h2>
+            <p class="callback__text">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+            <form class="callback__form" action="https://echo.htmlacademy.ru" method="POST" autocomplete="off">
+              <div class="callback__form-wrapper">
+                <label class="visually-hidden" for="callback-name">Имя</label>
+                <input class="callback__input callback__input-name" id="callback-name" type="text" name="name" required="" placeholder="Введите Ваше Имя">
+                <label class="visually-hidden" for="callback-tel">Телефон</label>
+                <input class="callback__input callback__input-tel" id="callback-tel" type="tel" name="phone" pattern="\d*" title="Только цифры" rueqired="" placeholder="Введите Ваш номер телефона">
+              </div>
+              <button class="callback__button button" type="submit">Подобрать велосипед мечты</button>
+            </form>
+          </section>
+        </div>
+      </div>
+    </header>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <section class="map">
+          <h2 class="map__title">Как нас найти?</h2>
+          <p class="map__text">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+          <picture class="map__image">
+            <source type="image/webp" media="(min-width: 1024px)" srcset="img/map-1x.webp 1x, img/map-2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet-1x.webp 1x, img/map-tablet-2x.webp 2x">
+            <source type="image/webp" media="(min-width: 320px)" srcset="img/map-mobile-1x.webp 1x, img/map-mobile-2x.webp 2x">
+            <source type="image/webp" srcset="img/greece-bg.webp 1x, img/greece-bg-2x.webp 2x">
+            <source media="(min-width: 1024px)" srcset="img/map-1x.jpg 1x, img/map-2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map-tablet-1x.jpg 1x, img/map-tablet-2x.jpg 2x">
+            <source media="(min-width: 320px)" srcset="img/map-mobile-1x.jpg 1x, img/map-mobile-2x.jpg 2x">
+            <img class="map__picture" src="img/map-1x.jpg" srcset="img/map-2x.jpg 2x" width="957" height="530" alt="Адрес компании: Санкт-Петербург, ул. Большая Конюшенная, д. 19">
+          </picture>
+        </section>
+        <div class="contacts-links">
+          <a class="contacts-links__item contacts-links__item--mail" href="mailto:puteshestviemechta@gmail.ru">
+            <svg class="contacts-links__item-icon contacts-links__item-icon--mail" width="26" height="21">
+              <use xlink:href="img/sprite_auto.svg#icon-mail"></use>
+            </svg>
+            puteshestviemechta@gmail.ru
+          </a>
+          <a class="contacts-links__item contacts-links__item--phone" href="tel:+749978468446">
+            <svg class="contacts-links__item-icon contacts-links__item-icon--phone" width="17" height="24">
+              <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
+            </svg>
+            +7 (499)784-684-46
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      var navMain = document.querySelector('.header-nav');
+      var navToggle = document.querySelector('.header-nav__toggle');
+
+      navMain.classList.remove('header-nav--no-js');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('header-nav--closed')) {
+          navMain.classList.remove('header-nav--closed');
+          navMain.classList.add('header-nav--opened');
+        } else {
+          navMain.classList.add('header-nav--closed');
+          navMain.classList.remove('header-nav--opened');
+        }
+      });
+    </script>
+  </body>
 </html>
