@@ -1,12 +1,21 @@
 .map {
-  padding: 50px 0 20px 0;
+  padding: 143px 0 26px 0;
   display: flex;
   flex-direction: column;
   text-align: center;
+
+  @media (max-width: $tablet-width-only) {
+    padding: 62px 0 9px 0;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding: 62px 0 19px 0;
+  }
 }
 
 .map__title {
   @include reset-list;
+  margin: 0 10px 10px 0;
   font-family: $font-deafult;
   font-size: 30px;
   letter-spacing: -0.005em;
@@ -17,6 +26,7 @@
 
   @media (max-width: $tablet-width-only) {
     font-size: 24px;
+    margin: 0 0 10px 0;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -26,12 +36,17 @@
 
 .map__text {
   @include reset-list;
+  margin: 20px 27% 40px 26%;
   font-family: $font-deafult;
-  letter-spacing: -0.005em;
-  line-height: 32px;
-  font-weight: 300;
+  font-size: 17px;
+  line-height: 31px;
+  font-weight: 400;
   font-style: normal;
   color: $special-black-07;
+
+  @media (max-width: $tablet-width-only) {
+    margin: 11px 9% 19px 9%;
+  }
 }
 
 .map__picture {

@@ -1,0 +1,10 @@
+.page-main {
+  padding-top: 100px;
+  font-family: $font-deafult;
+  color: $basic-black;
+  background-color: $basic-white;
+
+  @media (max-width: $tablet-width-only) {
+    padding-top: 10px;
+  }
+}
