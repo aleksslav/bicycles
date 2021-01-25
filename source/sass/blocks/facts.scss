@@ -27,9 +27,14 @@
   flex-direction: column;
   flex-basis: 16.438em;
   align-items: center;
+  margin-bottom: 40px;
+
+  @media (max-width: $tablet-width-only) {
+    margin-bottom: 0;
+  }
 }
 
-.facts__item-number {
+.facts__item span {
   margin-bottom: 16px;
   font-family: $font-deafult;
   font-size: 28px;
@@ -46,35 +51,35 @@
   }
 }
 
-.facts__item-number--01 {
+.facts__item--01 span {
   @media (max-width: $mobile-width-only) {
     margin-top: 2px;
     margin-bottom: 18px;
   }
 }
 
-.facts__item-number--02 {
+.facts__item--02 span {
   @media (max-width: $mobile-width-only) {
     margin-top: 0;
     margin-bottom: 7px;
   }
 }
 
-.facts__item-number--03 {
+.facts__item--03 span {
   @media (max-width: $mobile-width-only) {
     margin-top: 5px;
     margin-bottom: 8px;
   }
 }
 
-.facts__item-number--04 {
+.facts__item--04 span {
   @media (max-width: $mobile-width-only) {
     margin-top: 8px;
     margin-bottom: 10px;
   }
 }
 
-.facts__item-description {
+.facts__item p {
   @include reset-list;
   font-family: $font-deafult;
   font-size: 22px;

@@ -2,7 +2,11 @@
   font-family: $font-deafult;
   color: $basic-black;
   background-color: $basic-white;
-  padding-bottom: 50px;
+  padding-bottom: 94px;
+
+  @media (max-width: $tablet-width-only) {
+    padding-bottom: 36px;
+  }
 }
 
 .page-footer__wrapper {

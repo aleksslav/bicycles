@@ -13,7 +13,7 @@
   }
 }
 
-.map__title {
+.map h2 {
   @include reset-list;
   margin: 0 10px 10px 0;
   font-family: $font-deafult;
@@ -34,7 +34,7 @@
   }
 }
 
-.map__text {
+.map p {
   @include reset-list;
   margin: 20px 27% 40px 26%;
   font-family: $font-deafult;
@@ -49,7 +49,7 @@
   }
 }
 
-.map__picture {
+.map__image img {
   width: 957px;
   height: 530px;
   background-repeat: no-repeat;

@@ -27,7 +27,7 @@
   }
 }
 
-.banner-logo {
+.banner a {
   @media (max-width: $tablet-width-only) {
     padding-left: 21px;
   }
@@ -37,7 +37,7 @@
   }
 }
 
-.banner__title {
+.banner h2 {
   @include reset-list;
   margin-top: 23px;
   font-family: $font-deafult;
@@ -61,7 +61,7 @@
   }
 }
 
-.banner__text {
+.banner p {
   @include reset-list;
   margin-top: 24px;
   font-family: $font-deafult;

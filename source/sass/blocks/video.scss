@@ -30,7 +30,7 @@
   }
 }
 
-.video__title {
+.video h2 {
   @include reset-list;
   margin: 0 10px 9px 0;
   font-family: $font-deafult;
@@ -53,7 +53,7 @@
   }
 }
 
-.video__text {
+.video p {
   @include reset-list;
   margin: 10px 36% 56px 36%;
   font-family: $font-deafult;
@@ -74,7 +74,7 @@
   }
 }
 
-.video__preload {
+.video__image img {
   width: 929px;
   height: 522px;
   background-repeat: no-repeat;

@@ -1,5 +1,5 @@
 .bike-types {
-  padding-top: 275px;
+  padding-top: 235px;
   padding-bottom: 137px;
   font-family: $font-deafult;
   color: $basic-black;
@@ -12,7 +12,7 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    padding-bottom: 11px;
+    padding-bottom: 12px;
   }
 }
 
@@ -32,7 +32,7 @@
   }
 }
 
-.bike-types__title {
+.bike-types h2 {
   @include reset-list;
   margin-bottom: 51px;
   font-family: $font-deafult;
@@ -55,15 +55,15 @@
   @include reset-list;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.14fr 1fr 1fr 0.25fr;
-  gap: 0 50px;
-  grid-template-areas:
-    "road . children"
-    "road mountain children"
-    "road mountain children"
-    ". mountain .";
+  grid-template-rows: auto;
+  column-gap: 50px;
+
+  @media (max-width: 1145px) {
+    column-gap: 10px;
+  }
 
   @media (max-width: $tablet-width-only) {
+    column-gap: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -92,7 +92,7 @@
 .bike-types__item--road {
   position: relative;
   z-index: 1;
-  grid-area: road;
+
   padding-top: 10px;
 
   &::after {
@@ -121,6 +121,7 @@
       left: -37px;
       height: 127px;
       width: 127px;
+
       border: 18px solid $basic-turquoise;
       border-radius: 100px;
     }
@@ -138,6 +139,7 @@
       left: -25px;
       height: 127px;
       width: 127px;
+
       border: 18px solid $basic-turquoise;
       border-radius: 100px;
     }
@@ -147,7 +149,8 @@
 .bike-types__item--mountain {
   position: relative;
   z-index: 1;
-  grid-area: mountain;
+  padding-top: 39px;
+
 
   &::after {
     content: "";
@@ -166,7 +169,7 @@
     z-index: 2;
     position: absolute;
     display: block;
-    top: -18px;
+    top: 21px;
     left: -19px;
     height: 47px;
     width: 47px;
@@ -174,13 +177,15 @@
   }
 
   @media (max-width: $tablet-width-only) {
+    padding-top: 0;
+
     &::after {
-      content: "";
+
       display: none;
     }
 
     &::before {
-      content: "";
+
       display: none;
     }
   }
@@ -189,7 +194,7 @@
 .bike-types__item--children {
   position: relative;
   z-index: 1;
-  grid-area: children;
+
 
   &::before {
     content: "";
@@ -214,6 +219,7 @@
       right: -25px;
       height: 68px;
       width: 68px;
+
       border: 13px solid $basic-turquoise;
       border-radius: 100px;
     }
@@ -229,13 +235,14 @@
       right: -13px;
       height: 68px;
       width: 68px;
+
       border: 13px solid $basic-turquoise;
       border-radius: 100px;
     }
   }
 }
 
-.bike-types__image--road {
+.bike-types__item--road img {
   width: 342px;
   height: 503px;
   background-repeat: no-repeat;
@@ -244,7 +251,7 @@
   border-radius: 10px;
 }
 
-.bike-types__image--mountain {
+.bike-types__item--mountain img {
   width: 342px;
   height: 566px;
   background-repeat: no-repeat;
@@ -253,7 +260,7 @@
   border-radius: 10px;
 }
 
-.bike-types__image--children {
+.bike-types__item--children img {
   width: 342px;
   height: 512px;
   background-repeat: no-repeat;
@@ -262,14 +269,14 @@
   border-radius: 10px;
 }
 
-.bike-types__image {
+.bike-types img {
   @media (max-width: $tablet-width-only) {
     width: auto;
     height: 300px;
   }
 }
 
-.bike-types__item-description {
+.bike-types p {
   @include reset-list;
   margin: 12px 0;
   font-family: $font-deafult;
