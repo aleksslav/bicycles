@@ -6,7 +6,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  @media (max-width: 1076px) {
+  @media (max-width: 1088px) {
     padding: 7px 16% 9px 16%;
   }
 
@@ -24,6 +24,10 @@
     justify-content: center;
     padding: 5px 0 0 0;
   }
+}
+
+.contacts-links__item {
+  margin-bottom: 24px;
 }
 
 .contacts-links__item--mail,

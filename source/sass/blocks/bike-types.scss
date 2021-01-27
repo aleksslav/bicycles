@@ -59,7 +59,7 @@
   column-gap: 50px;
 
   @media (max-width: 1145px) {
-    column-gap: 10px;
+    column-gap: 15px;
   }
 
   @media (max-width: $tablet-width-only) {
@@ -270,6 +270,10 @@
 }
 
 .bike-types img {
+  @media (max-width: 1145px) {
+    width: 320px;
+  }
+
   @media (max-width: $tablet-width-only) {
     width: auto;
     height: 300px;
