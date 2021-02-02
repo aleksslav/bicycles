@@ -146,15 +146,18 @@
   }
 
   .header-nav--opened .site-list {
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 105px;
     background-color: $basic-white;
+    flex-direction: column;
+    justify-content: start;
+    flex-wrap: unset;
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
-    overflow: hidden;
     z-index: 998;
+    overflow: auto;
   }
 
   .header-nav--no-js .site-list {
