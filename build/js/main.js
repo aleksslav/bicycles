@@ -20,5 +20,6 @@
         navMain.classList.remove('header-nav--opened');
         body.classList.remove('overflow');
       }
-  });
-}})();
+    });
+  }
+})();

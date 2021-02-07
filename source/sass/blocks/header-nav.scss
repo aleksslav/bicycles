@@ -146,7 +146,7 @@
   }
 
   .header-nav--opened .site-list {
-    min-height: 100vh;
+    height: 100vh;
     padding-top: 105px;
     background-color: $basic-white;
     flex-direction: column;
@@ -157,7 +157,7 @@
     top: 0;
     width: 100%;
     z-index: 998;
-    overflow: auto;
+    overflow: hidden auto;
   }
 
   .header-nav--no-js .site-list {
